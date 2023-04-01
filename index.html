@@ -28,45 +28,6 @@
 		}
 		
 		nav {
-  background-color: #000000;
-  width: 150px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  color: #ffffff; /* set the nav text color */
-}
-
-a.nav-link {
-  display: block;
-  color: #000;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 50px;
-  padding: 0 10px;
-  border-radius: 5px;
-}
-
-a.nav-link:hover {
-  background-color: #00FF00;
-}
-
-header {
-  margin-left: 150px; /* adjust for the width of the nav bar */
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-  color: #333; /* set the header text color */
-}
-
-main {
-  margin-left: 150px; /* adjust for the width of the nav bar */
-  padding: 20px;
-  color: #333; /* set the main text color */
-}
-
-		
-		nav {
   			background-color: #333;
   			width: 150px;
   			height: 100%;
@@ -91,7 +52,7 @@ main {
 
 		a {
   			display: block;
-  			color: #000000;
+  			color: #fff; /* change nav bar text color to white */
   			text-decoration: none;
   			font-size: 18px;
   			line-height: 50px;
@@ -117,6 +78,15 @@ main {
 		main {
   			margin-left: 150px; /* adjust for the width of the nav bar */
   			padding: 20px;
+		}
+
+		/* add CSS for email and phone number links */
+		.container a[href^="mailto:"] {
+			color: #00FF00;
+		}
+
+		.container a[href^="tel:"] {
+			color: #00FF00;
 		}
 
 	</style>
