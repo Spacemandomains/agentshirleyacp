@@ -94,6 +94,21 @@
 			justify-content: center;
 			align-items: center;
 		}
+		
+		div {
+  			position: relative;
+  			padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  			padding-top: 30px; /* optional */
+  			height: 0;
+		}
+
+		div iframe {
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			height: 100%;
+		}
 
 		/* Set up the hierarchy grid */
 		.main > div:first-child {
@@ -151,8 +166,8 @@
 	</header>
 	<body>
 	<main class="main">
-		<div>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/Nc1uqy6VICE"frameborder="0" allowfullscreen></iframe>
+		<div class="video-container">
+  		<iframe width="560" height="315" src="https://www.youtube.com/embed/Nc1uqy6VICE" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div>
 		<a href="https://example.com">
