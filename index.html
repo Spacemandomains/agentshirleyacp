@@ -75,12 +75,12 @@
 		/* Set up the main content area */
 		.main {
 			display: grid;
-			grid-template-columns: repeat(2, 3, 1fr);
-			grid-template-rows: repeat(8, 8, 8fr);
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, 1fr);
 			gap: 1rem;
 			padding: 1rem;
 			width: 100%;
-			max-width: 1200px;
+			max-width: 800px;
 			margin: 0 auto;
 		}
 
@@ -91,50 +91,55 @@
 			font-size: 2rem;
 			font-weight: bold;
 			display: flex;
-			justify-content: right;
-			align-items: right;
-		}
-		
-		div {
-  			position: relative;
-  			padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  			padding-top: 30px; /* optional */
-  			height: 0;
-		}
-
-		div iframe {
-  			position: absolute;
-  			top: 0;
-  			left: 0;
-  			width: 100%;
-  			height: 1200%;
+			justify-content: center;
+			align-items: center;
 		}
 
 		/* Set up the hierarchy grid */
 		.main > div:first-child {
-			grid-column: 1 / 2;
+			grid-column: 1 / 3;
 			grid-row: 1 / 3;
 		}
 
 		.main > div:nth-child(2) {
 			grid-column: 3;
-			grid-row: 3 / 2;
+			grid-row: 1 / 3;
 		}
 
 		.main > div:nth-child(3) {
 			grid-column: 1;
-			grid-row: 8;
+			grid-row: 3;
 		}
 
 		.main > div:nth-child(4) {
 			grid-column: 2;
-			grid-row: 8;
+			grid-row: 3;
 		}
 
+		.main > div:nth-child(5) {
+			grid-column: 3;
+			grid-row: 3;
+		}
+
+		.main > div:nth-child(6) {
+			grid-column: 3;
+			grid-row: 3;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.main > div:nth-child(6) iframe {
+			width: 100%;
+			height: 100%;
+			max-width: 800px;
+			max-height: 450px;
+		}
 	</style>
 </head>
 <body>
-<header>
+	<header>
 <nav>
  <span class="left-text">Shirley Jones FCC Registered Advisor Maxsip Telcom LLC</span>
   <ul class="menu">
@@ -146,19 +151,13 @@
 	</header>
 	<body>
 	<main class="main">
-		<div class="video-container">
-  		<iframe width="560" height="315" src="https://www.youtube.com/embed/Nc1uqy6VICE" frameborder="0" allowfullscreen></iframe>
-		</div>
 		<div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Nc1uqy6VICE"frameborder="0" allowfullscreen></iframe>
 		</div>
-		<div class="grid">
-	<div 
-	</div>
-	<div 
-	</div>
-	<div 
-	</div>
-</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
 	</main>
 </body>
 </html>
