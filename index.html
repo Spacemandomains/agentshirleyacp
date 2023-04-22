@@ -1,128 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Free Tablets from Maxsip Telecom LLC</title>
 	<style>
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			align-items: center;
-			padding: 20px;
-			max-width: 1200px;
-			margin: 0 auto;
-			margin-left: 150px; /* add this property */
-		}
-
-		.container img {
-			max-width: 400px;
-			height: auto;
-			margin-right: 100px;
-		}
-
-		.container p {
-			font-size: 18px;
-			line-height: 1.5;
-			text-align: left;
-			flex: 1;
+		/* Reset default browser styles */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
 		}
 		
 		nav {
-  			background-color: #333;
-  			width: 150px;
-  			height: 100%;
-  			position: fixed;
-  			top: 0;
-  			left: 0;
+			background-color: #333;
+			height: 50px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 20px;
 		}
 
-		ul {
-  			list-style: none;
+		nav .left-text {
+			color: #fff;
+			font-size: 1.2rem;
+		}
+
+		nav .menu {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav .menu li {
+			margin-left: 20px;
+		}
+
+		nav .menu li:first-child {
+			margin-left: 0;
+		}
+
+		nav .menu li a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.2rem;
+			padding: 10px;
+		}
+		
+		.menu {
+  			list-style-type: none;
   			margin: 0;
   			padding: 0;
-  			display: flex;
-  			flex-direction: column;
-  			height: 100%;
+  			float: right;
 		}
 
-		li {
-  			margin: 0;
-  			border-bottom: 1px solid #555;
+		.menu li {
+  			display: inline-block;
 		}
 
-		a {
+		.menu li a {
   			display: block;
-  			color: #fff; /* change nav bar text color to white */
-  			text-decoration: none;
-  			font-size: 18px;
-  			line-height: 50px;
-  			padding: 0 10px;
-  			border-radius: 5px;
-		}
-
-		a:hover {
-  			background-color: ##00FF00;
-		}
-
-		header {
-  			margin-left: 150px; /* adjust for the width of the nav bar */
-  			background-color: #f2f2f2;
-  			padding: 20px;
+  			color: white;
   			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+			font-size: 18px;
 		}
 
-		h1 {
-  			margin: 0;
+		.button-1 {
+  			color: #196f99 !important;
 		}
 
-		main {
-  			margin-left: 150px; /* adjust for the width of the nav bar */
-  			padding: 20px;
+
+		/* Set up the main content area */
+		.main {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			gap: 1rem;
+			padding: 1rem;
+			width: 100%;
+			max-width: 800px;
+			margin: 0 auto;
 		}
 
-		/* add CSS for email and phone number links */
-		.container a[href^="mailto:"] {
-			color: #00FF00;
+		.main > div {
+			background-color: #12264f;
+			padding: 1rem;
+			text-align: center;
+			font-size: 2rem;
+			font-weight: bold;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
-		.container a[href^="tel:"] {
-			color: #00FF00;
+		/* Set up the hierarchy grid */
+		.main > div:first-child {
+			grid-column: 1 / 3;
+			grid-row: 1 / 3;
 		}
 
+		.main > div:nth-child(2) {
+			grid-column: 3;
+			grid-row: 1 / 3;
+		}
+
+		.main > div:nth-child(3) {
+			grid-column: 1;
+			grid-row: 3;
+		}
+
+		.main > div:nth-child(4) {
+			grid-column: 2;
+			grid-row: 3;
+		}
+
+		.main > div:nth-child(5) {
+			grid-column: 3;
+			grid-row: 3;
+		}
+
+		.main > div:nth-child(6) {
+			grid-column: 3;
+			grid-row: 3;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.main > div:nth-child(6) iframe {
+			width: 100%;
+			height: 100%;
+			max-width: 800px;
+			max-height: 450px;
+		}
 	</style>
 </head>
 <body>
-
+<header>
 <nav>
-  <ul>
-    <li><a href="index.html" class="nav-link">Free Internet and Free Tablet</a></li>
-    <li><a href="whatisacp.html" class="nav-link">What is ACP?</a></li>
-    <li><a href="helpspreadtheword.html" class="nav-link">Help Spread the Word</a></li>
+ <span class="left-text">Shirley Jones FCC Registered Advisor Maxsip Telcom LLC</span>
+  <ul class="menu">
+    <li><a href="mailto:acpagentshirleyjones@gmail.com"class="button-1">Email</a></li>
+    <li><a href="tel:+18086796021">Phone</a></li>
+    <li><a href="https://meet.google.com/xmi-icxw-ncp">Video Chat</a></li>
   </ul>
 </nav>
-
-	<div class="container">
-		<img src="Revised Tablet flyer.png" alt="Free Tablets from Maxsip Telecom LLC">
-		
-  <blockquote>
-  <p>Aloha,<br>
-  On behalf of Maxsip Telecom LLC and the Affordable Connectivity Program,<br>
-  I would like to introduce you and your Staff to the availability of FREE TABLETS<br>
-  (ONE TIME $25.00 CO PAY REQUIRED FOR ACTIVATION) for Households who receive any type of Government benefits.</p>
-
-  <p>I have Tablets and would like to make an appointment with your organization to host an Event to distribute these devices.</p>
-
-  <p>Please feel free to contact me should you have any questions or concerns.</p>
-			
-  <p><a href="mailto:acpagentshirleyjones@gmail.com">acpagentshirleyjones@gmail.com</a></p>
-		
-  <p><a href="tel:+18086796021">Call us at (808) 679-6021</a></p>
-
-  <p>Respectfully,<br>
-  Shirley Jones<br>
-  FCC Registered Advisor<br>
-  Maxsip Telcom LLC</p>
-	  
-</blockquote>
-
- 
+	</header>
+	<body>
+	<main class="main">
+		<div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Nc1uqy6VICE"frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div><a href="https://example.com">
+    		<img src="https://github.com/Spacemandomains/agentshirleyacp/blob/9c114770e99e33ab8f74a03a600c7e635ba56834/JOIN%20US.jpg" alt="Join Us">
+  		</a>
+		</div>
+		<div><a href="https://example.com">
+    		<img src="https://github.com/Spacemandomains/agentshirleyacp/blob/9c114770e99e33ab8f74a03a600c7e635ba56834/Revised%20Tablet%20flyer.png" alt="Free Tablet and Free Internet">
+  		</a>
+		</div>
+		<div><a href="https://example.com">
+    		<img src="https://github.com/Spacemandomains/agentshirleyacp/blob/68f9e16545bf922d5b0d7a69af41e390d048e049/Aloha%20Graphic.jpeg" alt="Free Internet with Aloha">
+  		</a>
+		</div>
+		<div> Aloha, the FCC launched a new program on December 31, 2021: Low-income households can now apply for the Affordable Connectivity Program, 
+		which includes monthly internet discounts, an Enhanced Tribal Benefit, and a one-time device discount. To learn more, go to 
+		AffordableConnectivity.gov. (Twitter) USAC has created a toolkit that includes resources organizations can use to make consumers aware 
+		of the new Affordable Connectivity Program and give them the opportunity to participate. Consumer advocacy groups, social service agencies, 
+		and other organizations that support eligible households are welcome to print and distribute any or all of the toolkit’s resources in their 
+		communities. For more information, <a href="#phone-nav">Call Shirley</a>.
+		</div>
+	</main>
+</body>
+</html>
